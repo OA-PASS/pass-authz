@@ -224,7 +224,7 @@
                   <FCREPO_HOST>${FCREPO_HOST}</FCREPO_HOST>
                   <FCREPO_PORT>${FCREPO_PORT}</FCREPO_PORT>
                   <FCREPO_JMS_BASEURL>http://${FCREPO_HOST}:${FCREPO_PORT}/fcrepo/rest</FCREPO_JMS_BASEURL>
-                  <PASS_FEDORA_BASEURL>http://localhost:${FCREPO_PORT}/fcrepo/rest/</PASS_FEDORA_BASEURL>
+                  <PASS_FEDORA_BASEURL>http://${FCREPO_HOST}:${FCREPO_PORT}/fcrepo/rest/</PASS_FEDORA_BASEURL>
                   <PASS_ELASTICSEARCH_URL>http://elasticsearch:9200</PASS_ELASTICSEARCH_URL>
                   <PASS_FEDORA_USER>fedoraAdmin</PASS_FEDORA_USER>
                   <PASS_FEDORA_PASSWORD>moo</PASS_FEDORA_PASSWORD>
@@ -236,6 +236,7 @@
                   <SPRING_ACTIVEMQ_BROKER_URL>failover:(tcp://activemq:61616)?trackMessages=true</SPRING_ACTIVEMQ_BROKER_URL>
                   <SPRING_ACTIVEMQ_USER>messaging</SPRING_ACTIVEMQ_USER>
                   <SPRING_ACTIVEMQ_PASSWORD>moo</SPRING_ACTIVEMQ_PASSWORD>
+                  <FCREPO_LOGBACK_LOCATION>/usr/local/tomcat/lib/logback.xml</FCREPO_LOGBACK_LOCATION>
                 </env>
                 <ports>
                   <port>${FCREPO_PORT}:${FCREPO_PORT}</port>
